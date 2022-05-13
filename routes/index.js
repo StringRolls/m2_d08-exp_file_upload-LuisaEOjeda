@@ -20,6 +20,7 @@ router.get('/rooms', (req, res) => {
 		});
 });
 
+
 router.get('/rooms/:id', (req, res) => {
 	const { id } = req.params;
 	//const roomId = req.params.id

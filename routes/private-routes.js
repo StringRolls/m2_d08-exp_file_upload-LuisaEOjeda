@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 const Room = require('./../models/Room.model');
-const fileUploader = require('./../config/cloudinary')
+const fileUploader = require('./../config/cloudinary')/// this is the connection to multer
 
 router.get('/profile', (req, res) => {
 	res.render('private/profile', { user: req.session.currentUser });
